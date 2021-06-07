@@ -1,0 +1,33 @@
+
+  <div class="canvas-element">
+    <ng-container *ngIf="imgurl !== null">
+      <ng-container *ngIf="isLoadingimg">
+        <div class="title-container">
+          <div class="col-container">
+            <app-loading-spinner></app-loading-spinner>
+          </div>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="!isLoadingimg">
+        <img
+        [src]="imgurl"
+        alt="selected image">
+      </ng-container>
+    </ng-container>
+    <ng-container *ngIf="title !== null">
+      <div
+      class="title-container">
+        <div class="col-container">
+          <ng-container *ngIf="isLoadingTitle">
+            <app-loading-spinner></app-loading-spinner>
+          </ng-container>
+          <ng-container *ngIf="!isLoadingTitle">
+            <h1>{{title}}</h1>
+          </ng-container>
+        </div>
+      </div>
+    </ng-container>
+
+  </div>
+
+

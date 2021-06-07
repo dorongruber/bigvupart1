@@ -1,0 +1,36 @@
+.canvas-element {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  z-index: 100;
+  height: 360px;
+  width: 100%;
+}
+
+.title-container {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  justify-content: center;
+  width: 100%;
+}
+
+.col-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 360px;
+}
+
+
+h1 {
+  font-family: "Inter-Bold";
+  width: fit-content;
+  color: black;
+}
+
+

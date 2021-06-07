@@ -1,0 +1,18 @@
+<div class="mainpage-container">
+  <header class="headers-container">
+    <a [routerLink]="['/white']">
+      <h3 class="header">white</h3>
+    </a>
+    <a  [routerLink]="['/blue']">
+    <h3 class="header">blue</h3>
+  </a>
+  </header>
+
+  <div class="inputs-container">
+    <app-inputs></app-inputs>
+  </div>
+  <div class="canvas-main-container">
+    <app-canvas appCanvasBorder [highlightColor]="routerColor" ></app-canvas>
+  </div>
+
+</div>

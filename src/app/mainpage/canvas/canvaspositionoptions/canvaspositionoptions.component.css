@@ -1,0 +1,12 @@
+.canvas-positions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 14rem;
+  height: 360px;
+}
+
+.icon {
+  cursor: pointer;
+}
